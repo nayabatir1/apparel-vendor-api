@@ -1,0 +1,32 @@
+{
+  "name": "apparel-vendor-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon src/index",
+    "build": "tsc",
+    "serve": "node dist/index.js",
+    "seed": "ts-node src/seeders/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@nayabatir1-github.com:nayabatir1/apparel-vendor-api.git"
+  },
+  "author": "Atir Nayab",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.4",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http-status": "^1.7.4",
+    "joi": "^17.13.3",
+    "zod": "^3.23.8"
+  }
+}
