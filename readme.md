@@ -33,6 +33,14 @@ The `Update Stock API` updates the price and quantity of an existing apparel of 
 
 One or multiple stock can be added/updated in single api call.
 
+Success message
+
+```
+{
+    "message": "Stock updated Successfully"
+}
+```
+
 ### Check Stock
 
 ```cURL
