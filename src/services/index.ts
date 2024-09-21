@@ -42,6 +42,17 @@ export async function checkLowestPriceService(
 
           const price = await db.findPrice(i.code, Quality.average, sizeType);
 
+          if (!price.amount)
+            throw new Error(
+              "Price is not set for, code: ".concat(
+                i.code,
+                ", quality: ",
+                Quality.average,
+                ", size: ",
+                sizeType
+              )
+            );
+
           const quantity = i.sizes[sizeType];
 
           totalPrice += price.amount * quantity;
