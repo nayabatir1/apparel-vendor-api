@@ -53,15 +53,6 @@
         "L": 2
       },
       "quality": "average"
-    },
-    {
-      "code": "33",
-      "quality": "average",
-      "sizes": {
-        "S": 50,
-        "M": 0,
-        "L": 0
-      }
     }
   ],
   "price": [
@@ -172,12 +163,6 @@
       "size": "L",
       "amount": 700,
       "quality": "good"
-    },
-    {
-      "code": "33",
-      "size": "S",
-      "amount": 400,
-      "quality": "average"
     }
   ]
 }
