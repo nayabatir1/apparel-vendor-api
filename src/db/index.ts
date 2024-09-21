@@ -44,12 +44,7 @@ class Database {
     return stock;
   }
 
-  async upsertStock(
-    code: string,
-    quality: Quality,
-    size: Size,
-    quantity: number
-  ) {
+  async upsertStock(code: string, quality: Quality) {
     const stock = this.data.stock.find(
       (i) => i.code === code && i.quality === quality
     );
@@ -63,20 +58,23 @@ class Database {
         S: 0,
         M: 0,
         L: 0,
-        [size]: quantity,
       },
     };
 
+    console.log(newStock);
+
     this.data.stock.push(newStock);
 
-    const newPrice = {
+    const newPrices = Object.values(Size).map((i) => ({
       code,
-      size,
+      size: i,
       amount: 0,
       quality,
-    };
+    }));
 
-    this.data.price.push(newPrice);
+    console.log(newPrices);
+
+    this.data.price.push(...newPrices);
 
     return newStock;
   }
@@ -87,7 +85,7 @@ class Database {
     size: Size,
     quantity: number
   ) {
-    const stock = await this.upsertStock(code, quality, size, quantity);
+    const stock = await this.upsertStock(code, quality);
 
     stock.sizes[size] = quantity;
 
