@@ -33,7 +33,7 @@ The `Update Stock API` updates the price and quantity of an existing apparel of 
 
 One or multiple stock can be added/updated in single api call.
 
-### check stock
+### Check Stock
 
 ```cURL
 curl --location 'localhost:5555/check-stock' \
