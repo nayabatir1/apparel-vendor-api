@@ -1,5 +1,4 @@
 import express from "express";
-
 import status from "http-status";
 
 import config from "./config";

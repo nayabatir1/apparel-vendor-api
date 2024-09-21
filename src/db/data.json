@@ -1,0 +1,168 @@
+{
+  "stock": [
+    {
+      "code": "1",
+      "sizes": {
+        "S": 5,
+        "M": 32,
+        "L": 5
+      },
+      "quality": "good"
+    },
+    {
+      "code": "1",
+      "sizes": {
+        "S": 50,
+        "M": 15,
+        "L": 2
+      },
+      "quality": "average"
+    },
+    {
+      "code": "2",
+      "sizes": {
+        "S": 10,
+        "M": 5,
+        "L": 2
+      },
+      "quality": "good"
+    },
+    {
+      "code": "2",
+      "sizes": {
+        "S": 11,
+        "M": 10,
+        "L": 22
+      },
+      "quality": "average"
+    },
+    {
+      "code": "3",
+      "sizes": {
+        "S": 10,
+        "M": 5,
+        "L": 12
+      },
+      "quality": "good"
+    },
+    {
+      "code": "3",
+      "sizes": {
+        "S": 10,
+        "M": 5,
+        "L": 2
+      },
+      "quality": "average"
+    }
+  ],
+  "price": [
+    {
+      "code": "1",
+      "size": "S",
+      "amount": 400,
+      "quality": "average"
+    },
+    {
+      "code": "1",
+      "size": "S",
+      "amount": 450,
+      "quality": "good"
+    },
+    {
+      "code": "1",
+      "size": "M",
+      "amount": 350,
+      "quality": "average"
+    },
+    {
+      "code": "1",
+      "size": "M",
+      "amount": 550,
+      "quality": "good"
+    },
+    {
+      "code": "1",
+      "size": "L",
+      "amount": 350,
+      "quality": "average"
+    },
+    {
+      "code": "1",
+      "size": "L",
+      "amount": 600,
+      "quality": "good"
+    },
+    {
+      "code": "2",
+      "size": "S",
+      "amount": 400,
+      "quality": "average"
+    },
+    {
+      "code": "1",
+      "size": "S",
+      "amount": 700,
+      "quality": "good"
+    },
+    {
+      "code": "2",
+      "size": "M",
+      "amount": 350,
+      "quality": "average"
+    },
+    {
+      "code": "2",
+      "size": "M",
+      "amount": 750,
+      "quality": "good"
+    },
+    {
+      "code": "2",
+      "size": "L",
+      "amount": 440,
+      "quality": "average"
+    },
+    {
+      "code": "2",
+      "size": "L",
+      "amount": 800,
+      "quality": "good"
+    },
+    {
+      "code": "3",
+      "size": "S",
+      "amount": 550,
+      "quality": "average"
+    },
+    {
+      "code": "3",
+      "size": "S",
+      "amount": 800,
+      "quality": "good"
+    },
+    {
+      "code": "3",
+      "size": "M",
+      "amount": 440,
+      "quality": "average"
+    },
+    {
+      "code": "3",
+      "size": "M",
+      "amount": 700,
+      "quality": "good"
+    },
+    {
+      "code": "3",
+      "size": "L",
+      "amount": 500,
+      "quality": "average"
+    },
+    {
+      "code": "3",
+      "size": "L",
+      "amount": 700,
+      "quality": "good"
+    }
+  ]
+}

@@ -3,11 +3,14 @@ import * as Joi from "joi";
 import status from "http-status";
 
 export const validate =
-  (schema: Joi.ObjectSchema) =>
+  <T>(schema: Joi.ObjectSchema<T> | Joi.ArraySchema<T>) =>
   (req: Request, res: Response, next: NextFunction) => {
     const body = req.body;
 
-    const { error, value } = schema.validate(body);
+    const { error, value } = schema.validate(body, {
+      abortEarly: false,
+      stripUnknown: true,
+    });
     if (error) {
       console.log(error);
       return res.status(status.BAD_REQUEST).send(error.details[0].message);

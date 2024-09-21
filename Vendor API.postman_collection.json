@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "9befe071-0b0d-4942-930f-4c1b3787bfcc",
+		"name": "Vendor API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18480232"
+	},
+	"item": [
+		{
+			"name": "update stock",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"code\": \"1\",\n        \"size\": \"S\",\n        \"quantity\": 5,\n        \"quality\": \"good\",\n        \"pricePerUnit\": 450\n    },\n    {\n        \"code\": \"1\",\n        \"size\": \"S\",\n        \"quantity\": 50,\n        \"quality\": \"average\",\n        \"pricePerUnit\": 400\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5555/update-stock",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"update-stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check stock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"code\": \"1\",\n        \"sizes\": {\n            \"S\": 3,\n            \"M\": 55,\n            \"L\": 2\n        },\n        \"quality\": \"good\"\n    },\n    {\n        \"code\": \"1\",\n        \"sizes\": {\n            \"S\": 30,\n            \"M\": 10,\n            \"L\": 2\n        },\n        \"quality\": \"average\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5555/check-stock",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"check-stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check lowest price",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"code\": \"1\",\n        \"sizes\": {\n            \"S\": 1,\n            \"M\": 1,\n            \"L\": 1\n        }\n    },\n    {\n        \"code\": \"3\",\n        \"sizes\": {\n            \"S\": 1,\n            \"M\": 1,\n            \"L\": 1\n        }\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5555/check-lowest-price",
+					"host": [
+						"localhost"
+					],
+					"port": "5555",
+					"path": [
+						"check-lowest-price"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

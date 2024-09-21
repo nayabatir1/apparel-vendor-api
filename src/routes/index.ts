@@ -1,12 +1,37 @@
 import express from "express";
 
-import { init } from "../controllers";
+import { checkLowestPrice, checkStock, updateStock } from "../controllers";
 import { validate } from "../middleware";
-import { InitPayload } from "../validations";
-import { Root } from "../validations/types";
+import {
+  checkLowestPricePayload,
+  CheckStockPayload,
+  UpdateStockPayload,
+} from "../validations";
+import {
+  CheckLowestPriceSchema,
+  CheckStockPayloadSchema,
+  UpdateStockPayloadSchema,
+} from "../validations/types";
+import { catchAsync } from "../Utils";
 
 const router = express.Router();
 
-router.post<{}, {}, Root>("/", validate(InitPayload), init);
+router.patch<{}, {}, UpdateStockPayloadSchema>(
+  "/update-stock",
+  validate<UpdateStockPayloadSchema[]>(UpdateStockPayload),
+  catchAsync(updateStock)
+);
+
+router.post<{}, {}, CheckStockPayloadSchema>(
+  "/check-stock",
+  validate<CheckStockPayloadSchema[]>(CheckStockPayload),
+  catchAsync(checkStock)
+);
+
+router.post<{}, {}, CheckLowestPriceSchema>(
+  "/check-lowest-price",
+  validate<CheckLowestPriceSchema[]>(checkLowestPricePayload),
+  catchAsync(checkLowestPrice)
+);
 
 export default router;

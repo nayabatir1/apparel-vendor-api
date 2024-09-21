@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon src/index",
+    "start": "nodemon --ignore src/db/*.json src/index",
     "build": "tsc",
-    "serve": "node dist/index.js",
-    "seed": "ts-node src/seeders/index"
+    "serve": "node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +26,11 @@
     "express": "^4.19.2",
     "http-status": "^1.7.4",
     "joi": "^17.13.3",
-    "zod": "^3.23.8"
-  }
+    "npm": "^10.8.3"
+  },
+  "engines": {
+    "npm": "10.2.4",
+    "node": "20.11.0"
+  },
+  "engineStrict": true
 }

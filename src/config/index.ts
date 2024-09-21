@@ -1,14 +1,12 @@
 import "dotenv/config";
 
 interface ENV {
-  PORT: number | undefined;
+  PORT?: number;
 }
 
-interface Config {
-  PORT: number;
-  MONGO_URI: string;
-  GOOGLE_API_KEY: string;
-}
+type AllRequired<T extends object> = {
+  [K in keyof T]-?: T[K];
+};
 
 const getConfig = (): ENV => {
   return {
@@ -16,13 +14,13 @@ const getConfig = (): ENV => {
   };
 };
 
-const getSanitzedConfig = (config: ENV): Config => {
+const getSanitzedConfig = (config: ENV): AllRequired<ENV> => {
   for (const [key, value] of Object.entries(config)) {
-    if (value === undefined) {
+    if (!value) {
       throw new Error(`Missing key ${key} in .env`);
     }
   }
-  return config as Config;
+  return config as AllRequired<ENV>;
 };
 
 const config = getConfig();
