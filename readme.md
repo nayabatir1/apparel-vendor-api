@@ -5,7 +5,12 @@
 3. package install `npm i`
 4. run local server `npm start`
 
-# API Test
+# Tech Stack
+
+- Express.js v4
+- Typescript v5
+
+# API definition
 
 Postman collection json is attached with API definition and sample payload for testing.
 
