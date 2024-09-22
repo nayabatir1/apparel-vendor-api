@@ -1,14 +1,19 @@
 # Local server setup
 
 1. use node 20.11 `nvm use`
-2. copy env values `cp example.env .env`
-3. package install `npm i`
-4. run local server `npm start`
+1. copy env values `cp example.env .env`
+1. package install `npm i`
+1. run local server `npm start`
+1. <details>
+   <summary>Run tests `npm test`</summary>
+   ![alt text](image.png)
+   </details>
 
 # Tech Stack
 
 - Express.js v4
 - Typescript v5
+- Jest v29
 
 # API definition
 

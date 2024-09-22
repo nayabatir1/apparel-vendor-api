@@ -61,8 +61,6 @@ class Database {
       },
     };
 
-    console.log(newStock);
-
     this.data.stock.push(newStock);
 
     const newPrices = Object.values(Size).map((i) => ({
@@ -71,8 +69,6 @@ class Database {
       amount: 0,
       quality,
     }));
-
-    console.log(newPrices);
 
     this.data.price.push(...newPrices);
 
