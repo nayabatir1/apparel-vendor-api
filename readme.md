@@ -7,7 +7,7 @@
 1. Run test cases `npm test`
    
 <details>
-   <summary>Test case final result</summary>
+   <summary>Test Results Summary</summary>
    <img src="https://github.com/user-attachments/assets/aab65e33-d317-4f94-b175-89b9438ca7ee" height="300" />
 </details>
 
