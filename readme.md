@@ -1,10 +1,11 @@
 # Local server setup
 
-1. use node 20.11 `nvm use`
-1. copy env values `cp example.env .env`
-1. package install `npm i`
-1. run local server `npm start`
-1. Run test cases `npm test`
+1. Use Node 20.11: `nvm use`
+1. Copy environment values: `cp example.env .env`
+1. Install packages: `npm install`
+1. Start the local server: `npm start`
+1. Run test cases: `npm test`
+
    
 <details>
    <summary>Test Results Summary</summary>
