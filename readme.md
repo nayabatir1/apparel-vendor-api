@@ -4,10 +4,12 @@
 1. copy env values `cp example.env .env`
 1. package install `npm i`
 1. run local server `npm start`
-1. <details>
-   <summary>Run tests `npm test`</summary>
+1. Run test cases `npm test`
+   
+<details>
+   <summary>Test case final result</summary>
    <img src="https://github.com/user-attachments/assets/aab65e33-d317-4f94-b175-89b9438ca7ee" height="300" />
-   </details>
+</details>
 
 # Tech Stack
 
