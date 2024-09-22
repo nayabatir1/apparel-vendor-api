@@ -6,7 +6,7 @@
 1. run local server `npm start`
 1. <details>
    <summary>Run tests `npm test`</summary>
-   ![alt text](image.png)
+   <img src="https://github.com/user-attachments/assets/aab65e33-d317-4f94-b175-89b9438ca7ee" height="300" />
    </details>
 
 # Tech Stack
